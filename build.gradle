@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.holly.ban'
+version = '1.0'
+
+compileJava.options.encoding = 'UTF-8' // Добавьте эту строку
+compileTestJava.options.encoding = 'UTF-8' // Добавьте эту строку
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}

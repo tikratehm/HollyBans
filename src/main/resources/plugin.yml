@@ -1,0 +1,5 @@
+#владелец плагина tikrate, по всем вопросам тг - @javaexploitcom
+name: HollyBans
+version: 1.0
+main: com.holly.ban.HollyBans
+api-version: 1.16
